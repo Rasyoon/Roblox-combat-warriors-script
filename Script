@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 -- Made By Ahmed discord combatlegnd#0440
 -- some of the features here are from nova hub
 
-}
+
 if KillAuraHitCooldown == nil then
     getgenv().KillAuraHitCooldown = 0.2
 end
