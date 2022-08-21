@@ -1,0 +1,294 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Starhub = Instance.new("ScreenGui")
+local Window = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local KillauraButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local KillauraActivated = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ReachButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ReachActivated = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Killaura = Instance.new("TextLabel")
+local Reach = Instance.new("TextLabel")
+local Walkspeed = Instance.new("TextLabel")
+local WalkspeedButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local WalkspeedActivated = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local WalkspeedBar = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local JumppowerButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local JumppowerActivated = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local JumppowerBar = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Jumppower = Instance.new("TextLabel")
+local JumppowerSlide = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local WalkspeedSlide = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local Bar = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+Starhub.Name = "Starhub"
+Starhub.Parent = game.Workspace
+
+Window.Name = "Window"
+Window.Parent = Starhub
+Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Window.BorderSizePixel = 0
+Window.Position = UDim2.new(0.314474672, 0, 0.353658527, 0)
+Window.Size = UDim2.new(0, 505, 0, 240)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Window
+
+KillauraButton.Name = "KillauraButton"
+KillauraButton.Parent = Window
+KillauraButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillauraButton.Position = UDim2.new(0.0217821784, 0, 0.175000012, 0)
+KillauraButton.Size = UDim2.new(0, 40, 0, 40)
+KillauraButton.Font = Enum.Font.SourceSans
+KillauraButton.Text = ""
+KillauraButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillauraButton.TextSize = 14.000
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = KillauraButton
+
+KillauraActivated.Name = "KillauraActivated"
+KillauraActivated.Parent = Window
+KillauraActivated.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+KillauraActivated.Position = UDim2.new(0.0316831768, 0, 0.19583334, 0)
+KillauraActivated.Size = UDim2.new(0, 30, 0, 30)
+
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = KillauraActivated
+
+ReachButton.Name = "ReachButton"
+ReachButton.Parent = Window
+ReachButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReachButton.Position = UDim2.new(0.0217821784, 0, 0.391666681, 0)
+ReachButton.Size = UDim2.new(0, 40, 0, 40)
+ReachButton.Font = Enum.Font.SourceSans
+ReachButton.Text = ""
+ReachButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ReachButton.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = ReachButton
+
+ReachActivated.Name = "ReachActivated"
+ReachActivated.Parent = Window
+ReachActivated.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+ReachActivated.Position = UDim2.new(0.031683147, 0, 0.412499994, 0)
+ReachActivated.Size = UDim2.new(0, 30, 0, 30)
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = ReachActivated
+
+Killaura.Name = "Killaura"
+Killaura.Parent = Window
+Killaura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killaura.BackgroundTransparency = 1.000
+Killaura.Position = UDim2.new(0.118811883, 0, 0.174999997, 0)
+Killaura.Size = UDim2.new(0, 110, 0, 40)
+Killaura.Font = Enum.Font.GothamBold
+Killaura.Text = "Killaura"
+Killaura.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killaura.TextSize = 30.000
+Killaura.TextWrapped = true
+
+Reach.Name = "Reach"
+Reach.Parent = Window
+Reach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reach.BackgroundTransparency = 1.000
+Reach.Position = UDim2.new(0.120792083, 0, 0.391666681, 0)
+Reach.Size = UDim2.new(0, 90, 0, 40)
+Reach.Font = Enum.Font.GothamBold
+Reach.Text = "Reach"
+Reach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reach.TextSize = 30.000
+Reach.TextWrapped = true
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = Window
+Walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.BackgroundTransparency = 1.000
+Walkspeed.Position = UDim2.new(0.118811883, 0, 0.787500024, 0)
+Walkspeed.Size = UDim2.new(0, 155, 0, 40)
+Walkspeed.Font = Enum.Font.GothamBold
+Walkspeed.Text = "WalkSpeed"
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextSize = 30.000
+Walkspeed.TextWrapped = true
+
+WalkspeedButton.Name = "WalkspeedButton"
+WalkspeedButton.Parent = Window
+WalkspeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedButton.Position = UDim2.new(0.0217821002, 0, 0.787500083, 0)
+WalkspeedButton.Size = UDim2.new(0, 40, 0, 40)
+WalkspeedButton.Font = Enum.Font.SourceSans
+WalkspeedButton.Text = ""
+WalkspeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkspeedButton.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 9)
+UICorner_6.Parent = WalkspeedButton
+
+WalkspeedActivated.Name = "WalkspeedActivated"
+WalkspeedActivated.Parent = Window
+WalkspeedActivated.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+WalkspeedActivated.Position = UDim2.new(0.0316832066, 0, 0.808333337, 0)
+WalkspeedActivated.Size = UDim2.new(0, 30, 0, 30)
+
+UICorner_7.CornerRadius = UDim.new(0, 9)
+UICorner_7.Parent = WalkspeedActivated
+
+WalkspeedBar.Name = "WalkspeedBar"
+WalkspeedBar.Parent = Window
+WalkspeedBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedBar.Position = UDim2.new(0.46336633, 0, 0.849999964, 0)
+WalkspeedBar.Size = UDim2.new(0, 234, 0, 9)
+
+UICorner_8.CornerRadius = UDim.new(0, 9)
+UICorner_8.Parent = WalkspeedBar
+
+JumppowerButton.Name = "JumppowerButton"
+JumppowerButton.Parent = Window
+JumppowerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerButton.Position = UDim2.new(0.0217821002, 0, 0.591666758, 0)
+JumppowerButton.Size = UDim2.new(0, 40, 0, 40)
+JumppowerButton.Font = Enum.Font.SourceSans
+JumppowerButton.Text = ""
+JumppowerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumppowerButton.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 9)
+UICorner_9.Parent = JumppowerButton
+
+JumppowerActivated.Name = "JumppowerActivated"
+JumppowerActivated.Parent = Window
+JumppowerActivated.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+JumppowerActivated.Position = UDim2.new(0.0316832066, 0, 0.612500012, 0)
+JumppowerActivated.Size = UDim2.new(0, 30, 0, 30)
+
+UICorner_10.CornerRadius = UDim.new(0, 9)
+UICorner_10.Parent = JumppowerActivated
+
+JumppowerBar.Name = "JumppowerBar"
+JumppowerBar.Parent = Window
+JumppowerBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerBar.Position = UDim2.new(0.463366359, 0, 0.654166639, 0)
+JumppowerBar.Size = UDim2.new(0, 234, 0, 9)
+
+UICorner_11.CornerRadius = UDim.new(0, 9)
+UICorner_11.Parent = JumppowerBar
+
+Jumppower.Name = "Jumppower"
+Jumppower.Parent = Window
+Jumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jumppower.BackgroundTransparency = 1.000
+Jumppower.Position = UDim2.new(0.118811935, 0, 0.591666639, 0)
+Jumppower.Size = UDim2.new(0, 163, 0, 40)
+Jumppower.Font = Enum.Font.GothamBold
+Jumppower.Text = "Jumppower"
+Jumppower.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jumppower.TextSize = 30.000
+Jumppower.TextWrapped = true
+
+JumppowerSlide.Name = "JumppowerSlide"
+JumppowerSlide.Parent = Window
+JumppowerSlide.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+JumppowerSlide.Position = UDim2.new(0.479207933, 0, 0.604166687, 0)
+JumppowerSlide.Size = UDim2.new(0, 10, 0, 33)
+JumppowerSlide.Font = Enum.Font.SourceSans
+JumppowerSlide.Text = ""
+JumppowerSlide.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumppowerSlide.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 9)
+UICorner_12.Parent = JumppowerSlide
+
+WalkspeedSlide.Name = "WalkspeedSlide"
+WalkspeedSlide.Parent = Window
+WalkspeedSlide.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+WalkspeedSlide.Position = UDim2.new(0.479207933, 0, 0.800000012, 0)
+WalkspeedSlide.Size = UDim2.new(0, 10, 0, 33)
+WalkspeedSlide.Font = Enum.Font.SourceSans
+WalkspeedSlide.Text = ""
+WalkspeedSlide.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkspeedSlide.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 9)
+UICorner_13.Parent = WalkspeedSlide
+
+Credits.Name = "Credits"
+Credits.Parent = Window
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.499009907, 0, 0.174999997, 0)
+Credits.Size = UDim2.new(0, 244, 0, 27)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Credits: Ahmed - Scripting | Ras - Making the gui"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 10.000
+
+Bar.Name = "Bar"
+Bar.Parent = Starhub
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.Position = UDim2.new(0.314474672, 0, 0.353658527, 0)
+Bar.Size = UDim2.new(0, 505, 0, 30)
+
+UICorner_14.CornerRadius = UDim.new(0, 9)
+UICorner_14.Parent = Bar
+
+TextButton.Parent = Bar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.BackgroundTransparency = 0.500
+TextButton.Position = UDim2.new(0.940594077, 0, 0.100000001, 0)
+TextButton.Size = UDim2.new(0, 24, 0, 24)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(130, 0, 2)
+TextButton.TextSize = 15.000
+
+UICorner_15.CornerRadius = UDim.new(1, 0)
+UICorner_15.Parent = TextButton
+
+TextButton_2.Parent = Bar
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_2.BackgroundTransparency = 0.500
+TextButton_2.Position = UDim2.new(0.879207969, 0, 0.100000001, 0)
+TextButton_2.Size = UDim2.new(0, 24, 0, 24)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "-"
+TextButton_2.TextColor3 = Color3.fromRGB(130, 121, 0)
+TextButton_2.TextSize = 33.000
+
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = TextButton_2
+
+TextLabel.Parent = Bar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 200, 0, 30)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Star Hub V1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 25.000
